@@ -1,0 +1,17 @@
+
+package PracticeCodeSet;
+
+import java.util.Scanner;
+
+
+public class ArraysLogic {
+
+	public static void main(String[] args){
+		System.out.println("Enter the string to be calculates");
+		Scanner s = new Scanner(System.in);
+		String input = s.nextLine();
+		s.close();
+		char[] inputCharacters = input.toCharArray();
+		
+	}
+}

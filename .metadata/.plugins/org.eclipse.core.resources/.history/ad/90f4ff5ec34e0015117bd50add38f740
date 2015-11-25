@@ -1,0 +1,35 @@
+
+package PracticeCodeSet;
+
+import java.util.Scanner;
+
+
+public class ArraysLogic {
+
+	public static void main(String[] args){
+		System.out.println("Enter the string to be calculates");
+		Scanner s = new Scanner(System.in);
+		String input = s.nextLine();
+		s.close();
+		char[] inputCharacters = input.toCharArray();
+		System.out.println(inputCharacters);
+		//String outputCharacters = new String();
+		char[] outputCharacters = new char[inputCharacters.length];
+		int k = 0;
+		int i = 0;
+		while(i<inputCharacters.length){
+			outputCharacters[k] = inputCharacters[i];
+			if(inputCharacters[i]==inputCharacters[i+1]){
+				int j = 0;
+				while(inputCharacters[i]==inputCharacters[i+1]){
+					j++;
+					i++;
+				}
+				k++;
+				outputCharacters[k] = (char)j;
+			}
+		}
+		
+		System.out.println(outputCharacters);
+	}
+}

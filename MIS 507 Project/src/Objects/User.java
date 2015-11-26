@@ -9,7 +9,7 @@ package Objects;
 public class User {
 	private long ID;
 	private String name;
-	//Hi ANirudh here
+	//Hi Anirudh Soundararajan here
 	//Getter and setters
 	public void setID(long inputID){
 		this.ID = inputID;
